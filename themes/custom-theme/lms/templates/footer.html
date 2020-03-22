@@ -24,7 +24,7 @@
               % endfor
             </ul>
           </nav>
-          -->
+          
           <div class="wrapper-logo">
             <p>
               <a href="/">
@@ -39,9 +39,9 @@
               </a>
             </p>
           </div>
-
+            -->
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-          <p class="copyright">${footer['copyright']}
+          <p style="font-size:10px;" class="copyright">${footer['copyright']}
                % if icp_license_info.get('icp_license'):
                 ${u" | {text}".format(text=icp_license_info.get('text'))}
                 <a href="${icp_license_info.get('icp_license_link', '#')}">
