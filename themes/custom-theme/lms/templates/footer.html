@@ -10,7 +10,7 @@
 <% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
 <%namespace name='static' file='static_content.html'/>
 
-  <div class="container-fluid wrapper-footer">
+  <div class="container-fluid wrapper-footer" style="padding: 10px 10px 0px 10px;">
     <footer>
       <div class="row">
         <div class="col-md-9">
@@ -41,7 +41,7 @@
           </div>
 
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-          <p class="copyright">${footer['copyright']}
+          <p class="copyright" style="font-size: 12px;">${footer['copyright']}
                % if icp_license_info.get('icp_license'):
                 ${u" | {text}".format(text=icp_license_info.get('text'))}
                 <a href="${icp_license_info.get('icp_license_link', '#')}">
