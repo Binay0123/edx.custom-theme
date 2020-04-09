@@ -533,7 +533,7 @@ AWS_S3_CUSTOM_DOMAIN = 'SET-ME-PLEASE (ex. bucket-name.s3.amazonaws.com)'
 
 ##############################################################################
 
-EDX_ROOT_URL = ''
+EDX_ROOT_URL = '52.14.119.61:18010'
 
 # use the ratelimit backend to prevent brute force attacks
 AUTHENTICATION_BACKENDS = [
